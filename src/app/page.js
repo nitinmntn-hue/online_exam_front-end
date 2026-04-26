@@ -523,7 +523,7 @@ function AuthModal({ open, onClose, initialTab = 0 }) {
 
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
-export default function ExamHomePage() {
+export default function HomePage() {
   const [authOpen, setAuthOpen] = useState(false);
   const [authTab, setAuthTab] = useState(0);
 
@@ -534,7 +534,7 @@ export default function ExamHomePage() {
     <>
         {/* All sections sit above the background */}
         <Box sx={{ position: "relative", zIndex: 1 }}>
-          <Navbar onLogin={openLogin} onSignup={openSignup} />
+          {/* <Navbar onLogin={openLogin} onSignup={openSignup} /> */}
           <Hero onSignup={openSignup} />
           <RoleSection onSignup={openSignup} />
           <Features />
